@@ -1,0 +1,115 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.calculator-main {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.calculator-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+}
+.calculator-extra {
+    margin: auto;
+    width: 80%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.main-display {
+    font-family: "Lucida Console";
+    width: 100%;
+    font-size: 2.5rem;
+    height: 40px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px 3px 1px 1px;
+    border: 1px solid #252525;
+}
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 16px 12px;
+    padding: 20px;
+}
+button {
+    font-size: 2.8rem;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 4px 4px 7px 7px;
+    border: 2px solid #c4c4c4;
+    background-color: transparent;
+    color: #333;
+    background-image: linear-gradient(to bottom,transparent,transparent 75%,rgba(0,0,0,.06));
+}
+button:hover {
+    background-color: #eaeaea;
+}
+.ext-input {
+    background-color: #f2f2f2;
+}
+.ext-input:hover{
+    background-color: #d9d9d9;
+}
+.button-equal {
+    grid-area: span 1 / span 2;
+    background-color: #0099ff;
+    border-color: #006bb3;
+}
+.button-equal:hover {
+    background-color: #008ae6;
+}
+.button-del, .button-clr {
+    background-color: #ff9900;
+    border-color:#b36b00;
+}
+.button-del:hover, .button-clr:hover {
+    background-color: #e68a00;
+}
+.dispaly-window{
+    width: 100%;
+    border-radius: 3px 3px 1px 1px;
+    border: 1px solid #252525;
+    background-color: #252525;
+    display: inline-block;
+    padding: 0px 0px 0px 2px;
+}
+.main-display2 {
+    /* font-family: "Lucida Console"; */
+    width: 94%;
+    font-size: 2.5rem;
+    height: 40px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+.advanced-toggle {
+    background-color: #252525;
+    color: white;
+    border: none;
+    width: 6%;
+    border-radius: 0px 0px 0px 0px;
+    height: 40px;
+    margin: 0px;
+    float: left;
+    outline: none;
+}
+.advanced-toggle:hover {
+    background-color: #333333;
+}

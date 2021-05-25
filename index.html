@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/calculator.css">
+        <script src="js/calculator.js"></script>
+    </head>
+    <body>
+        <div class="calculator-body">
+            <div class="calculator-extra" id="extra_window" style="display: none;">
+            </div>
+            <div class="calculator-main">
+                <div class="dispaly-window">
+                    <!-- <input type="text" class="main-display2"/> -->
+                    <input type="text" class="main-display2" id="main_display" value="" placeholder="0" readonly/>
+                    <button class="advanced-toggle" id="advanced_mode">&#128441;</button>
+                </div>            
+                <div class="keyboard">
+                    <!-- Special character buttons -->
+                    <button type="button" class="adv_input ext-input" id="spec_exp" value="e">e</button>
+                    <button type="button" class="adv_input ext-input" id="spec_pi" value="p">&pi;</button>
+                    <button type="button" class="adv_input ext-input" id="spec_x" value="x">x</button>
+                    <button type="button" class="adv_input ext-input" id="spec_y" value="y">y</button>
+                    <button type="button" class="adv_input ext-input" id="set_x" style="display: none;">x=</button>
+                    <button type="button" class="adv_input ext-input" id="set_y" style="display: none;">y=</button>
+                    <button type="button" class="ext-input" id="func_change">&#8634;</button>
+                    <!-- Special operator buttons -->
+                    <button type="button" class="ext-input" id="func_square" value="g">x&sup2;</button>
+                    <button type="button" class="ext-input" id="func_root" value="i">&radic;x</button>
+                    <button type="button" class="ext-input" id="func_inverse" value="k">x&#8315;&sup1;</button>
+                    <button type="button" class="adv_input ext-input" id="spec_parO" value="(">(</button>
+                    <button type="button" class="basic_input ext-input" id="spec_parC" value=")">)</button>
+                    <!-- Numbers 7, 8, 9; Backspace and Erase -->
+                    <button type="button" class="basic_input" id="num_7" value="7">7</button>
+                    <button type="button" class="basic_input" id="num_8" value="8">8</button>
+                    <button type="button" class="basic_input" id="num_9" value="9">9</button>
+                    <button type="button" class="button-del" id="func_del">DEL</button>
+                    <button type="button" class="button-clr" id="func_clr">AC</button>
+                    <!-- Numbers 4, 5, 6; Multiply and Divide -->
+                    <button type="button" class="basic_input" id="num_4" value="4">4</button>
+                    <button type="button" class="basic_input" id="num_5" value="5">5</button>
+                    <button type="button" class="basic_input" id="num_6" value="6">6</button>
+                    <button type="button" id="func_mul" value="*">&times;</button>
+                    <button type="button" id="func_div" value="/">&divide;</button>
+                    <!-- Numbers 1, 2, 3; Add and Subtract -->
+                    <button type="button" class="basic_input" id="num_1" value="1">1</button>
+                    <button type="button" class="basic_input" id="num_2" value="2">2</button>
+                    <button type="button" class="basic_input" id="num_3" value="3">3</button>
+                    <button type="button" id="func_add" value="+">+</button>
+                    <button type="button" id="func_sub" value="-">-</button>
+                    <!-- Number 0, Decimal point, Answer Character and Equals operator -->
+                    <button type="button" class="basic_input" id="num_0" value="0">0</button>
+                    <button type="button" class="basic_input" id="num_D" value=".">.</button>
+                    <button type="button" class="adv_input" class="button-ans" id="spec_ans" value="a">Ans</button>
+                    <button type="button" class="button-equal" id="func_equals">=</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
